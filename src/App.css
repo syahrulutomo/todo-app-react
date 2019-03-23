@@ -1,33 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Lato:400');
+
+html, body{
+  margin: 0;
+  background-color: #f5f6fa;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+div{
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.input{
+  width: 80%;
+  border: none;
+  border-bottom: 1.5px solid #EE5A24;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #353b48;
+  color: #f5f6fa;
+  margin: auto;
+  display: block;
+}
+
+.todo-list{
+  list-style: none;
+  line-height: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.todo{
+  width: 90%;
+  background-color: #fd9644;
+  margin-top: 1rem;
+  padding: .4rem 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  color: #f5f6fa;
+}
+
+.delete{
+  width: 12px;
+  height: 12px;
+  margin-top: 5px;
+  display: block;
+  float: right;
+}
+
+.delete:hover{
+  cursor: pointer;
+}
+
+.App{
+  padding: 1rem;
+  background-color: #353b48;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 10px;
 }
